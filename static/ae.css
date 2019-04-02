@@ -1,0 +1,13 @@
+.box {
+        padding: 10px;
+        margin-top: 5px;
+    }
+    
+.el-input {
+        width: 180px;
+    }
+
+.item {
+        padding: 5px;
+        flex-grow: 1;
+    }

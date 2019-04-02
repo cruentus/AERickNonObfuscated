@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=stylesheet href="static/ae.css" />
+    <div id="account_tab" class="text">Settings for Account: </div>
+    <div>Select ship：</div>
+    <div id="fleet_tab" class="box"></div>
+    <div>Fill Hangars: <input type="checkbox" id="hangar"></div>
+    <div>Leave 1 DN: <input type="checkbox" id="leave"></div>
+    <div>Enter Fleet ID:</div>
+    <input type="text" id="fleet"> to: <input type="text" id="target"> <input type="button" id="add" value="Add">
+    <table id="gather_tab">
+        <thead>
+            <tr>
+                <th width="40%" class="text">Fleet ID</th>
+                <th width="40%" class="text">Dest.</th>
+                <th width="20%" class="text">Remove</th>
+                <th width="20%" class="text">Edit</th>
+            </tr>
+        <tbody id="gather_tab_body">
+        </tbody>
+    </table>
+    <input id="save" type="button" value="Save">
+</head>
+
+<body style="min-width:400px;min-height:400px;">
+    <script src="js/lib/jquery.min.js"> </script>
+    <script src="js/utils.js"> </script>
+    <script src="js/menu.js"> </script>
+</body>
+
+</html>

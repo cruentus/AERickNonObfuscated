@@ -1,0 +1,47 @@
+{
+  "name": "AstroEmpires Utils",
+  "version": "0.1",
+  "description": "AstroEmpires Utils",
+  "permissions": [
+    "storage",
+    "webRequest",
+		"webRequestBlocking",
+		"*://*.astroempires.com/*",
+    "*://142.93.93.183/"
+  ],
+  "background": {
+    "scripts": [
+      "js/background.js",
+      "js/lib/jquery.min.js"
+    ]
+  },
+  "options_page": "index.html",
+  "browser_action": {
+    "default_title": "AstroEmpires_Utils",
+    "default_icon": "static/logo/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.astroempires.com/*"
+      ],
+      "exclude_matches": [
+        "*://*.astroempires.com/",
+        "*://*.astroempires.com/home.aspx*"
+      ],
+      "js": [
+        "js/lib/jquery.min.js",
+        "js/lib/jquery.form.min.js",
+        "js/lib/materialize.min.js",
+        "js/utils.js",
+        "js/discordhooks.js",
+        "js/auto_build.js",
+        "js/auto_attack.js",
+        "js/auto_move.js",
+        "js/auto_analysis.js",
+        "js/occ_checker.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
